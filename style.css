@@ -24,6 +24,7 @@ img{
 }
 .pagination{
     align-self:center;
+    position:relative !important;
 }
 .pagination__dot{
     border-radius:50%;

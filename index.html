@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   </head>
   <body>
-    <div class="item">
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="item swiper-slide">
       <img src="cat.jpg">
       <div class="caption__container">
         <div class="caption__meta">
@@ -15,12 +19,52 @@
           <p class="caption__heading">Тест</p>
         </div>
         <p class="caption__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
-        <div class="pagination">
+        <div class="pagination swiper-pagination">
           <span class="pagination__dot"></span>
           <span class="pagination__dot"></span>
           <span class="pagination__dot"></span>
         </div>
       </div>
     </div>
+    <div class="item swiper-slide">
+      <img src="cat.jpg">
+      <div class="caption__container">
+        <div class="caption__meta">
+          <p class="caption__date">23 июля 2020</p>
+          <p class="caption__heading">Тест</p>
+        </div>
+        <p class="caption__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+        <div class="pagination swiper-pagination">
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+        </div>
+      </div>
+    </div>
+    <div class="item swiper-slide">
+      <img src="cat.jpg">
+      <div class="caption__container">
+        <div class="caption__meta">
+          <p class="caption__date">23 июля 2020</p>
+          <p class="caption__heading">Тест</p>
+        </div>
+        <p class="caption__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+        <div class="pagination swiper-pagination">
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+          <span class="pagination__dot"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+  loop: true,
+pagination: {
+    el: '.swiper-pagination',
+  },
+})
+</script>
     </body>
 </html>
